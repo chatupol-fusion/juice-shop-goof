@@ -1,0 +1,16 @@
+{
+    "extensions": [
+        "eg2.vscode-npm-script",
+        "angular.ng-template",
+        "dbaeumer.vscode-eslint",
+        "stylelint.vscode-stylelint",
+        "snyk-security.snyk-vulnerability-scanner"
+        
+    ],
+    "settings": {
+        "eslint.workingDirectories": [
+            { "mode": "auto" }
+        ]
+    },
+    "postCreateCommand": "export NG_CLI_ANALYTICS=ci && export NG_FORCE_TTY=false && npm i -g @angular/cli && npm install && unset NG_FORCE_TTY"
+}
